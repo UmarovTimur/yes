@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   font-family: 'Noto Sans', sans-serif !important;
+}
+
+.elementor-heading-title {
+   font-weight: 400 !important;
+}
+
+.header {
+   position: absolute;
+   z-index: 100;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 15px 0;
+}
+
+.header__lang-list {
+   list-style: none;
+   display: flex;
+   /* align-items: center; */
+   /* justify-content: flex-end; */
+   margin: 0px;
+   flex-wrap: wrap;
+}
+
+.header__lang-link {
+   color: #9b1f1a;
+   /* font-family: "Georgia", Sans-serif; */
+   /* font-weight: 600; */
+}
+
+.header__lang-link:active {
+   opacity: 0.7;
+}
+
+.header__lang-link._active {
+   opacity: 0.6 !important;
+   text-decoration: none !important;
+   cursor: no-drop;
+}
+
+.header__lang-link._now {
+   border: 1px solid #9b1f1a;
+   border-radius: 4px;
+   padding: 4px 8px;
+   text-decoration: none !important;
+   opacity: 1 !important;
+   font-size: 16px;
+   background-color: #9b1f1a;
+   color: white;
+
+}
+
+.last-button-info {
+   border-radius: 4px;
+   padding: 8px 12px;
+   text-decoration: none !important;
+   font-size: 19px;
+   background-color: white;
+   color: #9b1f1a;
+
+   position: absolute;
+   bottom: 100px;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.last-button-info:hover {
+   /*background-color: #6e0b08;*/
+   opacity: .8;
+}
+
+@media (any-hover:hover) {
+   .header__lang-link:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+   }
+}
+
+@media (max-width:834px) {
+   .header__lang-list {
+      justify-content: center;
+   }
+
+   .elementor-22 .elementor-element.elementor-element-5e187b30 .elementor-heading-title {
+      margin: 100px 0 0 0;
+   }
+}
+
+
+@media (max-width:500px) {
+   .header__lang-link {
+      margin-right: 6px;
+      font-size: 15px;
+   }
+
+   .last-button-info {
+      font-size: 16px;
+      bottom: 60px;
+   }
+}
